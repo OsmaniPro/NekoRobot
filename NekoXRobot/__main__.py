@@ -52,14 +52,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/5fe62f4027eea179e9474.jpg) 」────
-*やあ! {},*
-*I am a Anime themed advance group management bot with a lots of New And Powerful Features.*
+────「 [{}](https://telegra.ph/file/68a54bd804d7b4a3c6f64.jpg) 」────
+*Osmani! {},*
+*I am a Osmani them advance group management bot with a lots of New And Powerful Features.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ✧ *Uptime:* `{}`
 ✧ `{}` *users, across* `{}` *chats.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➢ Try The Help Buttons Below To Know My Abilities ✘
+➢ Try The Help Buttons Below To Know My Osmani @ribajosmani
 """
 
 buttons = [
@@ -70,17 +70,17 @@ buttons = [
                     ],
                    [
                        InlineKeyboardButton(text="Help🔐", callback_data="help_back"),
-                       InlineKeyboardButton(text="Bot Support🎊", url="https://t.me/NekoXsupport"),
-                       InlineKeyboardButton(text="Logs🔔", url="t.me/Rental_Girlfriends_Logs"),
+                       InlineKeyboardButton(text="Bot Support🎊", url="https://t.me/osmanigroupbot"),
+                       InlineKeyboardButton(text="Logs🔔", url="t.me/meribaj"),
                      ],
                     [                  
                        InlineKeyboardButton(
                              text="Support🚑",
-                             url=f"https://t.me/Black_Knights_Union_Support"),
+                             url=f"https://t.me/osmanigroupbot"),
                        InlineKeyboardButton(
                              text="Updates🛰️",
-                             url="https://t.me/Black_Knights_Union"),
-                       InlineKeyboardButton(text="Network📊", url="https://t.me/Yuki_Network")
+                             url="https://t.me/osmanibots"),
+                       InlineKeyboardButton(text="Network📊", url="https://t.me/meribaj")
                      ], 
     ]
 
@@ -94,16 +94,16 @@ I Use My Powers To Help Admins To Manage Their Groups!
  • /settings:
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
-For all command use /* [or](https://telegra.ph/file/2866d7d3378cdad7b43ff.jpg) *!* 
+For all command use /* [or](https://telegra.ph/file/2https://telegra.ph/file/121483a45f70f69e0cb00.png) *!* 
 """.format(
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\nKindly use ! for commands if / is not working\n")
 
-GROUP_HELP_IMG = "https://telegra.ph/file/3bf1c58be585793e354ca.jpg"
-NEKO_IMG = "https://telegra.ph/file/6c6de4d3cc229b71a66cf.mp4"
+GROUP_HELP_IMG = "https://telegra.ph/file/4b81e09446c1e36bfc443.jpg"
+NEKO_IMG = "content:https://telegra.ph/file/f27d642810c1f907504d3.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Click here to donate in [Telegram](https://t.me/Horimaya)"""
+Click here to donate in [Telegram](https://t.me/ribajosmani)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -224,7 +224,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_video(
-                NEKO_IMG, caption=f"Neko!!!!\nI'm here with my Love")
+                NEKO_IMG, caption=f"Osmani!!!!\nI'm here with my Love")
 
 # for test purposes
 def error_callback(update: Update, context: CallbackContext):
@@ -366,7 +366,7 @@ def get_help(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="Click here", url="https://t.me/NekoXRobot?start=help")
+                  InlineKeyboardButton(text="Click here", url="https://t.me/osmanibots")
                   ]
                 ]
             ),
@@ -574,7 +574,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[❤️ 𝙈𝙮 𝙡𝙤𝙫𝙚 𝙞𝙨 𝙎𝙩𝙞𝙡𝙡 𝘼𝙡𝙞𝙫𝙚 ❤️](https://telegra.ph/file/8e4c4c8376925cab07eb1.jpg)", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[❤️ 𝙈𝙮 𝙡𝙤𝙫𝙚 𝙞𝙨 𝙎𝙩𝙞𝙡𝙡 𝘼𝙡𝙞𝙫𝙚 ❤️](https://telegra.ph/file/68a54bd804d7b4a3c6f64.jpg)", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!")
