@@ -1,5 +1,5 @@
 {
-      "name": "NekoRobot",
+      "name": "OsmaniChat",
       "description": "An Anime themed Telegram group management bot.",
       "logo": "https://telegra.ph/file/a45ba8a2c2c61335517bd.jpg",
       "keywords": [
@@ -9,7 +9,7 @@
          "manager",
          "KURUMI"
       ],   
-   "repository": "https://github.com/Hodacka/NekoRobot",
+   "repository": "https://github.com/OsmaniPro/NekoRobot",
    "addons": [
       {
          "options": {
